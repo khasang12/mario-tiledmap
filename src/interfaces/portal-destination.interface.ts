@@ -1,5 +1,5 @@
 export interface IPortalDestination {
-  x: number;
-  y: number;
-  dir: string;
+    x: number
+    y: number
+    dir: string
 }

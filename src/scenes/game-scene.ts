@@ -88,12 +88,18 @@ export class GameScene extends Phaser.Scene {
         this.physics.add.collider(this.enemies, this.bricks)
         this.physics.add.collider(this.player, this.bricks)
 
-        this.physics.add.collider(this.player, this.boxes, this.playerHitBox, undefined, this)
+        this.physics.add.collider(
+            this.player,
+            this.boxes,
+            (a, b) => this.playerHitBox(a as Mario, b as Box),
+            undefined,
+            this
+        )
 
         this.physics.add.overlap(
             this.player,
             this.enemies,
-            this.handlePlayerEnemyOverlap,
+            (a, b) => this.handlePlayerEnemyOverlap(a as Mario, b as Goomba),
             undefined,
             this
         )
@@ -101,15 +107,19 @@ export class GameScene extends Phaser.Scene {
         this.physics.add.overlap(
             this.player.getBullet(),
             this.enemies,
-            this.handleBulletEnemyOverlap,
+            (a, b) =>
+                this.handleBulletEnemyOverlap(
+                    a as Phaser.Types.Physics.Arcade.SpriteWithDynamicBody,
+                    b as Goomba
+                ),
             undefined,
-            this
+            this.player
         )
 
         this.physics.add.overlap(
             this.player,
             this.portals,
-            this.handlePlayerPortalOverlap,
+            (a, b) => this.handlePlayerPortalOverlap(a as Mario, b as Portal),
             undefined,
             this
         )
@@ -117,7 +127,7 @@ export class GameScene extends Phaser.Scene {
         this.physics.add.collider(
             this.player,
             this.platforms,
-            this.handlePlayerOnPlatform,
+            (a, b) => this.handlePlayerOnPlatform(a as Mario, b as Platform),
             undefined,
             this
         )
@@ -125,7 +135,7 @@ export class GameScene extends Phaser.Scene {
         this.physics.add.overlap(
             this.player,
             this.collectibles,
-            this.handlePlayerCollectiblesOverlap,
+            (a, b) => this.handlePlayerCollectiblesOverlap(a as Mario, b as Collectible),
             undefined,
             this
         )
@@ -286,12 +296,17 @@ export class GameScene extends Phaser.Scene {
 
     /**
      * Bullet <-> Enemy Overlap
-     * @param _player [Mario]
+     * @param _player [Bullet]
      * @param _enemy  [Enemy]
      */
-    private handleBulletEnemyOverlap(_player: Mario, _enemy: Goomba): void {
+    private handleBulletEnemyOverlap(
+        _bullet: Phaser.Types.Physics.Arcade.SpriteWithDynamicBody,
+        _enemy: Goomba
+    ): void {
         // player hit enemy on top
         _enemy.gotHitFromBulletOrMarioHasStar()
+        _bullet.disableBody(true, true)
+
         this.add.tween({
             targets: _enemy,
             props: { alpha: 0 },

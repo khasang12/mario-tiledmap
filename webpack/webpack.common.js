@@ -34,7 +34,7 @@ module.exports = {
         },
     },
     plugins: [
-        new HtmlWebpackPlugin({ gameName: 'My Game', template: 'index.html' }),
+        new HtmlWebpackPlugin({ gameName: 'Super Mario', template: 'index.html' }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'assets', to: 'assets' },

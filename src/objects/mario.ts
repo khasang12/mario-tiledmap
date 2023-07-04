@@ -6,6 +6,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
     // variables
     private currentScene: Phaser.Scene
     private marioSize: string
+    private lastDirection: string
     private acceleration: number
     private isJumping: boolean
     private isDying: boolean
@@ -29,6 +30,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
 
         this.currentScene = aParams.scene
         this.initSprite()
+        this.lastDirection = 'right'
         this.currentScene.add.existing(this)
     }
 
@@ -108,11 +110,13 @@ export class Mario extends Phaser.GameObjects.Sprite {
 
         // handle movements to left and right
         if (this.keys.get('RIGHT')?.isDown) {
+            this.lastDirection = 'right'
             this.body.setAccelerationX(this.acceleration)
             this.setFlipX(false)
         } else if (this.keys.get('SHOOT')?.isDown) {
             this.fireBullet()
         } else if (this.keys.get('LEFT')?.isDown) {
+            this.lastDirection = 'left'
             this.body.setAccelerationX(-this.acceleration)
             this.setFlipX(true)
         } else {
@@ -128,9 +132,10 @@ export class Mario extends Phaser.GameObjects.Sprite {
     }
 
     public fireBullet() {
+        this.bullet.enableBody(true, this.x, this.y, true, true)
         this.bullet.setAlpha(1)
         this.bullet.setPosition(this.x, this.y)
-        this.bullet.setVelocityX(300)
+        this.bullet.setVelocityX(this.lastDirection == 'right' ? 300 : -300)
         this.scene.anims.create({
             key: 'bullet',
             frames: this.scene.anims.generateFrameNumbers('bullet', {
@@ -155,6 +160,10 @@ export class Mario extends Phaser.GameObjects.Sprite {
 
     public stopBullet() {
         this.bullet.setAlpha(0)
+    }
+
+    public respawnBullet() {
+        this.bullet.disableBody(true, true)
     }
 
     private handleAnimations(): void {
