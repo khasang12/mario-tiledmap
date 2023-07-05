@@ -1,0 +1,170 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "new_level1.json",
+    "automapping.whileDrawing": true,
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInEditor": 3
+        },
+        ":/automap-tiles.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/Internship/Mario/assets/maps/new_level1.json": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400,
+                "y": 95.5
+            }
+        },
+        "D:/Internship/Mario/assets/maps/new_level1.json#new_tiles": {
+            "scaleInDock": 1
+        },
+        "D:/Internship/Mario/assets/maps/new_level2.json": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 400,
+                "y": 96.5
+            }
+        },
+        "D:/Internship/Mario/assets/maps/new_level2.json#new_tiles": {
+            "scaleInDock": 1
+        },
+        "D:/Internship/Mario/assets/maps/new_level3.json": {
+            "scale": 1.1435625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 398.75389408099693,
+                "y": 95.75340219708147
+            }
+        },
+        "D:/Internship/Mario/assets/maps/new_level3.json#new_tiles": {
+            "scaleInDock": 1
+        },
+        "D:/Internship/Mario/assets/maps/obstacleRules.tmx": {
+            "scale": 0.25,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -1336,
+                "y": 686
+            }
+        },
+        "D:/Internship/Mario/assets/maps/obstacleRules.tmx#new_tiles": {
+            "scaleInDock": 1
+        },
+        "D:/Internship/Mario/assets/maps/obstacleRules.tsx": {
+            "scaleInDock": 5.5,
+            "scaleInEditor": 1
+        },
+        "new_level1.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 5.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 66.9090909090909,
+                "y": 139.54545454545456
+            }
+        },
+        "new_level1.json#new_tiles": {
+            "scaleInDock": 3
+        },
+        "new_level1.tmx": {
+            "scale": 8,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 546.25,
+                "y": 150.9375
+            }
+        },
+        "new_level1.tmx#new_tiles": {
+            "scaleInDock": 5.5
+        },
+        "new_level2.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 78.75,
+                "y": 111.875
+            }
+        },
+        "new_level2.json#new_tiles": {
+            "scaleInDock": 1
+        },
+        "new_level3.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 5.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 620.5454545454545,
+                "y": 123.9090909090909
+            }
+        },
+        "new_level3.json#new_tiles": {
+            "scaleInDock": 4
+        },
+        "obstacleRules.tmx": {
+            "scale": 8,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 45.5,
+                "y": 60.9375
+            }
+        },
+        "obstacleRules.tmx#new_tiles": {
+            "scaleInDock": 3
+        },
+        "obstacleRules.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "last.exportedFilePath": "D:/Internship/Super Mario/assets/maps",
+    "last.imagePath": "D:/Internship/Super Mario/assets/tiles",
+    "map.fixedSize": true,
+    "map.height": 200,
+    "map.lastUsedExportFilter": "All Files (*)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "map.width": 200,
+    "openFiles": [
+        "new_level1.json",
+        "new_level2.json",
+        "new_level3.json",
+        "obstacleRules.tmx"
+    ],
+    "project": "mario.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "obstacleRules.tmx",
+        "new_level3.json",
+        "new_level2.json",
+        "new_level1.json",
+        "new_level1.tmx",
+        "D:/Internship/Mario/assets/maps/new_level1.json",
+        "D:/Internship/Mario/assets/maps/new_level2.json",
+        "D:/Internship/Mario/assets/maps/new_level3.json",
+        "D:/Internship/Mario/assets/maps/obstacleRules.tsx",
+        "D:/Internship/Mario/assets/maps/obstacleRules.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 8,
+        "width": 8
+    }
+}

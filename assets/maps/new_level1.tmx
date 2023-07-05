@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="100" height="24" tilewidth="8" tileheight="8" infinite="0" nextlayerid="4" nextobjectid="70">
+ <tileset firstgid="1" name="new_tiles" tilewidth="8" tileheight="8" tilecount="4096" columns="64">
+  <image source="../tiles/new_tiles.png" width="512" height="512"/>
+  <tile id="66">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="69">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="70">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="134">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="650">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="651">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="652">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="653">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="714">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="715">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="716">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="717">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="778">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="779">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="780">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="781">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="842">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="843">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="844">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="845">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="906">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="907">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="908">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="909">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="970">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="971">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="972">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="973">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1028">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1029">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1030">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1031">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1034">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1035">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1036">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1037">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1092">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1093">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1094">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1095">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1156">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1157">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1158">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1159">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1220">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1221">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1222">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1223">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1224">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1225">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1226">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1227">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1284">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1285">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1286">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1287">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1288">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1289">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1290">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1291">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1348">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1349">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1350">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1351">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1352">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1353">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1354">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1355">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1412">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1413">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1414">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1415">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1416">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1417">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1418">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1419">
+   <properties>
+    <property name="collide" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1986">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1987">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1992">
+   <properties>
+    <property name="collide" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1993">
+   <properties>
+    <property name="collide" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2050">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2051">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2056">
+   <properties>
+    <property name="collide" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2057">
+   <properties>
+    <property name="collide" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2114">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2115">
+   <properties>
+    <property name="collide" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <wangsets>
+   <wangset name="Mud" type="mixed" tile="-1">
+    <wangcolor name="" color="#ff0000" tile="-1" probability="1"/>
+    <wangcolor name="" color="#00ff00" tile="-1" probability="1"/>
+    <wangtile tileid="514" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="515" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="516" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="517" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="518" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="519" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="578" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="579" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="580" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="581" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="582" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="583" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="642" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="643" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="644" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="645" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="646" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="647" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="707" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="708" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="709" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="710" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="711" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="770" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="773" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="834" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="835" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="836" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="837" wangid="2,2,2,2,2,2,2,2"/>
+   </wangset>
+   <wangset name="Wall" type="corner" tile="-1">
+    <wangcolor name="" color="#ff0000" tile="-1" probability="1"/>
+    <wangcolor name="" color="#00ff00" tile="-1" probability="1"/>
+    <wangtile tileid="1028" wangid="0,0,0,2,0,2,0,0"/>
+    <wangtile tileid="1029" wangid="0,0,0,2,0,2,0,0"/>
+    <wangtile tileid="1030" wangid="0,0,0,2,0,2,0,0"/>
+    <wangtile tileid="1031" wangid="0,0,0,2,0,2,0,0"/>
+    <wangtile tileid="1092" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1095" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1153" wangid="0,0,0,2,0,0,0,0"/>
+    <wangtile tileid="1154" wangid="0,0,0,0,0,2,0,0"/>
+    <wangtile tileid="1156" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1159" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1217" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1218" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1220" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1223" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1225" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1226" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1281" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1282" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1284" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1287" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1288" wangid="0,0,0,2,0,2,0,0"/>
+    <wangtile tileid="1289" wangid="0,2,0,2,0,2,0,0"/>
+    <wangtile tileid="1290" wangid="0,0,0,2,0,2,0,2"/>
+    <wangtile tileid="1291" wangid="0,0,0,2,0,2,0,0"/>
+    <wangtile tileid="1348" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1351" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1353" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1354" wangid="0,0,0,0,0,2,0,2"/>
+    <wangtile tileid="1412" wangid="0,0,0,2,0,2,0,2"/>
+    <wangtile tileid="1413" wangid="0,0,0,2,0,2,0,0"/>
+    <wangtile tileid="1414" wangid="0,0,0,2,0,2,0,0"/>
+    <wangtile tileid="1415" wangid="0,2,0,2,0,2,0,0"/>
+    <wangtile tileid="1417" wangid="0,2,0,2,0,0,0,0"/>
+    <wangtile tileid="1418" wangid="0,0,0,0,0,2,0,2"/>
+   </wangset>
+   <wangset name="Ground" type="corner" tile="-1">
+    <wangcolor name="" color="#ff0000" tile="-1" probability="1"/>
+    <wangtile tileid="66" wangid="0,0,0,1,0,1,0,0"/>
+    <wangtile tileid="67" wangid="0,0,0,1,0,1,0,0"/>
+    <wangtile tileid="68" wangid="0,0,0,1,0,1,0,0"/>
+    <wangtile tileid="69" wangid="0,0,0,1,0,1,0,0"/>
+    <wangtile tileid="70" wangid="0,0,0,1,0,1,0,0"/>
+    <wangtile tileid="71" wangid="0,0,0,1,0,1,0,0"/>
+    <wangtile tileid="130" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="131" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="132" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="133" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="134" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="135" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="194" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="195" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="196" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="197" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="198" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="199" wangid="0,1,0,1,0,1,0,1"/>
+   </wangset>
+  </wangsets>
+ </tileset>
+ <tileset firstgid="4097" source=":/automap-tiles.tsx"/>
+ <layer id="2" name="backgroundLayer" width="100" height="24" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+645,581,647,580,709,520,711,643,517,644,520,580,581,582,708,518,582,647,711,643,647,708,519,644,519,582,583,712,519,515,707,518,520,517,584,709,517,519,647,707,707,707,707,583,645,645,710,644,707,645,517,645,581,516,515,646,582,583,581,580,647,647,647,710,581,644,712,518,518,581,648,518,711,515,709,515,519,644,647,645,711,647,582,579,518,580,646,643,580,646,582,579,645,580,579,707,646,645,647,518,
+708,518,517,516,583,708,707,583,707,711,712,711,712,580,580,644,579,517,707,710,579,712,647,584,516,643,582,707,710,517,583,648,647,579,583,518,708,580,580,711,707,707,707,711,709,520,708,517,584,646,648,712,709,584,712,643,580,518,645,520,648,519,516,711,581,518,708,645,579,708,647,647,583,708,582,709,711,580,515,707,646,648,711,583,711,584,581,516,584,710,707,584,579,644,712,580,710,707,517,583,
+584,516,580,579,519,711,519,520,582,648,645,580,579,643,517,647,712,515,647,583,709,645,518,709,520,517,520,647,515,517,710,583,582,709,645,646,710,520,520,707,707,707,707,712,579,584,710,709,517,579,581,643,520,707,708,709,581,579,707,712,519,580,580,712,584,648,708,648,645,516,517,517,582,581,711,709,710,518,579,643,646,583,645,707,708,583,710,644,581,712,515,709,579,583,645,584,710,581,647,645,
+516,580,643,518,708,647,583,518,708,709,646,648,516,520,645,579,518,584,647,645,520,712,520,648,710,515,709,643,707,515,711,584,516,581,518,584,643,519,707,520,647,709,643,711,648,711,646,711,712,645,710,645,583,517,516,712,643,518,580,707,518,707,516,584,582,646,645,712,643,712,579,516,580,644,515,646,517,647,519,518,515,647,643,518,516,644,644,644,518,520,515,582,518,583,644,643,645,647,709,579,
+580,582,711,517,515,518,710,712,583,707,646,582,520,646,581,515,708,712,648,579,520,712,583,709,516,517,710,644,584,646,583,647,520,646,643,712,515,517,517,708,648,647,708,580,519,643,710,583,643,580,646,584,515,648,518,582,710,645,584,581,643,520,516,646,517,646,712,584,584,709,708,647,648,709,648,581,648,516,712,580,516,582,710,584,708,644,645,643,584,648,584,581,519,580,645,517,710,580,583,516,
+645,712,517,709,708,581,517,646,519,515,582,518,644,707,645,712,710,709,648,646,710,518,580,580,584,520,580,516,583,710,712,710,647,517,579,582,647,582,581,518,645,518,709,707,579,709,583,579,515,646,644,707,519,580,583,710,643,515,581,708,710,583,581,644,709,648,708,644,645,584,516,709,709,517,518,579,645,643,647,583,515,709,582,584,584,707,584,645,519,712,711,516,711,648,647,709,580,707,516,520,
+584,584,710,580,582,644,515,712,520,520,520,644,711,584,712,584,711,646,648,519,644,581,709,646,645,516,646,516,710,582,584,515,647,520,579,519,517,648,580,579,519,707,519,644,710,583,584,710,582,647,643,584,707,647,645,584,644,516,581,515,584,712,583,644,580,709,707,709,582,579,517,520,583,579,520,518,710,519,515,708,520,516,709,520,645,712,583,710,708,517,516,515,647,582,579,709,581,707,708,517,
+708,712,579,645,644,644,711,583,515,584,515,647,712,516,580,516,516,519,583,711,648,516,515,710,518,708,519,711,519,712,579,711,582,517,711,712,647,516,707,707,518,711,580,582,648,579,646,517,518,515,516,711,712,645,708,708,582,515,711,518,582,517,583,516,707,516,707,710,646,707,580,579,647,583,708,712,517,583,645,645,583,582,648,518,712,520,519,583,516,517,647,583,710,710,647,582,647,580,708,708,
+517,712,709,707,580,707,517,583,707,515,579,711,518,710,708,579,644,515,707,518,712,584,646,648,519,645,520,712,712,710,580,519,515,520,579,516,583,517,644,643,581,707,646,643,709,708,647,707,708,517,579,710,581,648,646,707,516,712,583,579,584,710,516,515,515,707,520,711,515,646,581,646,709,584,708,581,516,515,643,647,584,581,711,707,517,707,582,582,581,712,583,579,709,645,584,517,583,709,707,707,
+581,515,584,712,581,646,710,520,584,519,647,518,709,708,520,647,710,645,520,643,712,644,647,644,515,708,712,645,519,645,710,711,518,646,519,645,583,516,709,583,647,648,581,584,647,711,580,710,708,709,707,579,519,643,644,643,707,644,709,582,519,707,517,644,710,519,707,516,711,581,647,583,644,580,708,643,646,581,646,582,710,711,647,519,516,515,515,515,646,584,712,520,518,579,584,710,519,711,647,643,
+712,582,583,709,644,579,645,712,581,519,579,708,646,581,583,517,646,517,517,519,710,515,647,516,515,712,646,519,645,711,583,516,645,515,584,518,648,581,581,520,518,647,646,708,648,517,580,644,519,643,580,581,520,579,583,579,583,584,580,579,645,711,643,517,647,515,580,583,712,646,707,709,648,647,712,707,584,712,584,582,645,644,582,515,584,708,709,643,519,582,580,580,580,584,583,646,520,579,518,580,
+648,581,582,516,647,579,582,646,644,581,708,708,648,707,519,645,647,647,707,710,580,646,645,584,647,579,582,707,583,709,517,645,646,644,710,648,648,646,709,517,517,708,645,517,707,707,581,515,709,518,584,708,579,710,648,709,579,582,579,519,643,711,708,581,519,647,581,710,712,518,645,711,712,517,707,707,645,581,708,518,712,712,584,643,712,519,582,645,579,648,582,643,644,515,517,646,517,707,581,579,
+709,644,519,582,518,643,645,581,707,644,581,515,708,583,579,520,645,580,584,647,708,707,579,579,709,515,579,707,519,647,711,709,515,708,712,517,583,643,707,582,711,516,581,515,648,584,520,707,708,515,709,517,520,643,709,516,645,644,643,711,580,515,581,707,644,519,520,647,520,579,581,648,708,584,646,517,711,515,584,584,581,516,584,708,516,646,516,708,646,647,582,517,520,579,709,710,583,517,582,515,
+584,712,582,582,707,711,519,643,647,643,711,710,711,643,583,517,647,648,710,516,647,644,707,711,647,644,583,643,579,648,643,518,518,584,583,709,708,520,707,645,709,707,709,647,519,644,709,707,708,518,580,581,581,581,710,711,518,582,712,580,707,707,710,710,644,1548,1548,1548,712,584,710,582,707,707,644,516,518,646,646,643,581,519,579,580,644,644,646,580,580,710,581,711,708,579,516,519,516,519,707,707,
+645,517,644,707,712,711,515,580,580,707,517,648,707,645,708,583,709,709,516,645,709,647,645,712,647,712,580,647,646,518,708,644,709,583,516,645,581,580,520,516,584,711,643,708,707,645,582,647,711,711,707,583,582,712,709,644,520,645,584,518,712,711,583,581,709,1548,1548,1548,648,581,708,709,579,708,648,711,518,643,710,647,583,583,711,646,710,708,707,710,580,584,707,520,644,581,645,646,709,520,645,518,
+515,644,579,710,518,579,648,646,580,710,710,579,580,582,711,581,516,580,644,583,580,711,710,645,711,711,707,647,647,581,708,517,644,584,647,520,584,707,519,520,583,583,708,709,516,519,647,646,519,518,515,520,579,711,582,645,712,707,645,581,708,515,710,516,646,1612,1612,1612,584,710,647,520,516,583,579,580,643,711,516,517,582,648,710,518,517,644,516,708,515,712,712,584,712,709,580,644,711,580,519,519,
+771,644,643,838,709,773,643,646,644,838,643,710,773,709,710,837,837,709,707,774,646,708,835,835,835,709,646,837,837,838,773,837,835,774,838,707,838,837,709,836,709,708,643,835,708,708,837,645,771,646,645,643,771,708,836,773,771,771,710,644,771,836,709,643,710,644,835,838,837,835,774,709,646,771,646,772,771,710,772,771,710,710,835,774,643,707,707,774,707,708,707,707,645,773,644,771,836,836,643,835,
+710,710,708,771,708,645,835,835,836,643,835,708,838,774,838,774,836,838,772,772,708,707,708,643,837,709,646,643,708,709,646,644,710,835,645,772,708,837,707,643,643,771,709,707,835,838,646,643,710,646,707,644,835,771,772,646,709,708,646,771,708,643,773,773,836,771,772,645,836,707,708,773,709,645,643,710,710,836,643,645,773,644,710,773,835,710,645,837,709,707,645,644,837,644,644,836,771,643,835,708,
+708,644,709,835,836,709,771,773,709,772,773,772,838,838,707,836,710,836,710,773,710,710,774,836,644,709,709,709,772,774,707,774,838,836,643,772,774,708,774,774,772,707,709,645,836,707,645,708,709,707,835,707,773,773,710,709,709,645,835,774,710,646,771,709,709,836,772,646,772,708,774,836,838,709,771,644,709,710,708,643,838,774,646,771,646,644,771,645,643,645,837,774,837,707,646,835,773,835,771,644,
+708,771,708,835,646,709,710,774,772,837,644,646,646,643,707,646,708,645,646,644,646,836,643,771,707,708,771,773,707,772,709,646,643,773,836,835,837,835,645,709,710,835,773,771,645,774,773,836,643,710,771,707,644,644,773,708,710,838,771,836,708,707,838,644,837,837,645,709,709,773,644,707,771,644,707,772,837,646,773,837,709,709,772,643,837,709,708,836,838,645,835,643,835,838,707,709,771,837,837,646,
+646,771,643,774,835,707,646,772,837,774,708,644,835,643,708,646,707,645,837,645,643,643,838,707,708,710,709,710,709,774,774,773,774,774,772,773,835,835,771,772,772,710,773,837,643,772,835,771,836,708,709,707,835,646,710,835,707,643,710,710,646,643,836,771,707,709,645,708,774,708,709,708,710,645,835,708,837,837,771,835,644,772,707,835,646,646,773,771,646,709,837,708,646,709,774,708,837,772,773,710,
+774,710,773,838,773,645,836,646,709,709,645,838,773,774,836,838,645,708,771,837,835,710,772,835,836,835,772,772,835,709,836,708,771,644,709,838,707,707,836,709,710,644,646,835,837,773,774,644,710,708,772,771,771,771,835,708,771,773,838,643,838,708,708,710,838,707,774,773,710,772,771,771,645,646,835,773,771,837,708,838,836,774,837,645,837,838,710,836,771,646,773,772,644,772,709,835,708,646,772,772
+</data>
+ </layer>
+ <layer id="1" name="foregroundLayer" width="100" height="24">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,775,776,775,776,775,776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,10,11,12,13,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,839,840,839,840,839,840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,73,74,75,76,77,78,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,393,394,395,396,397,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,137,138,139,140,141,142,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,457,458,459,460,461,462,0,0,0,0,0,0,0,0,1573,1574,1575,1576,1577,1578,1579,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,201,202,203,204,205,206,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,259,260,261,262,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,521,522,523,524,525,526,0,0,0,0,0,0,0,0,1637,1638,1639,1640,1641,1642,1643,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,265,266,267,268,269,270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,323,324,325,326,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1701,1702,1703,1704,1705,1706,1707,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,387,388,389,390,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1765,1766,1767,1768,1769,1770,1771,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,549,550,551,552,553,554,555,556,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,451,452,453,454,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,613,614,615,616,617,618,619,620,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,677,678,679,680,681,682,683,684,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1859,1860,1861,1862,1863,1864,1865,1866,1867,1868,1869,1870,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,741,742,743,744,745,746,747,748,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1923,1924,1925,1926,1927,1928,1929,1930,1931,1932,1933,1934,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,651,652,0,0,0,0,0,0,0,0,0,0,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,
+0,0,0,0,0,0,0,0,3039,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,67,67,67,67,67,67,4,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,900,900,0,0,0,715,716,0,0,0,0,0,0,0,0,67,67,2051,1546,2053,2054,2055,2056,1546,2058,2059,2060,2061,2062,
+0,651,652,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,67,67,195,195,195,195,195,195,67,67,65,0,0,0,0,0,0,0,0,0,0,0,0,0,900,900,0,0,962,779,780,962,651,652,0,0,0,67,67,131,131,195,1546,2117,2118,2119,2120,1546,2122,2123,2124,2125,2126,
+0,715,716,0,0,0,0,0,1029,1030,1031,1032,0,1028,0,0,0,0,0,0,0,0,193,193,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,131,195,195,195,195,195,195,195,195,195,67,67,0,0,0,0,0,0,0,0,0,0,0,0,900,900,0,0,962,779,780,962,715,716,0,67,67,131,131,195,195,195,1546,1546,1546,1546,1546,1546,195,195,195,195,195,
+0,779,780,0,0,0,0,0,1093,1094,1095,1096,0,0,0,0,0,0,0,0,0,0,651,652,67,68,68,67,68,69,67,67,72,67,68,69,70,71,72,67,67,67,67,67,67,195,195,195,195,649,650,195,195,195,195,195,195,195,196,67,67,67,67,67,67,0,0,0,0,0,0,900,900,0,0,67,843,844,69,779,780,67,131,131,195,195,1546,195,195,195,195,195,195,195,195,195,195,195,195,195,
+68,843,844,68,68,67,68,69,1157,1158,1159,1160,70,71,72,67,68,69,1,1,72,67,781,782,131,132,132,133,133,133,649,650,133,134,135,133,133,133,133,133,133,133,133,133,133,133,649,650,133,713,714,134,135,136,195,195,195,195,195,195,195,196,196,196,196,3039,3039,3039,67,68,67,68,69,70,71,133,133,133,133,133,133,133,133,134,135,136,131,132,195,195,195,195,195,195,195,195,195,195,195,195,
+133,134,135,136,133,133,133,133,1413,133,133,1416,133,133,133,133,133,133,1,1,133,133,133,133,196,133,133,197,197,197,713,714,133,134,135,197,197,197,197,197,197,197,197,197,197,197,713,714,197,197,133,133,133,133,133,133,133,133,133,133,195,195,195,195,196,3039,3039,3039,133,133,133,133,133,133,133,1542,197,197,197,1542,133,133,1539,133,133,133,133,133,133,133,133,133,133,133,133,134,133,134,135,136,
+197,198,199,200,197,197,197,197,197,197,197,197,197,197,197,197,197,197,1,1,197,197,197,197,197,197,197,197,198,199,197,197,197,198,199,200,197,197,197,198,199,200,197,197,197,197,197,197,198,199,197,197,197,197,197,197,197,197,197,197,197,197,197,198,199,2342,3039,3039,197,1542,197,197,197,197,197,197,198,199,200,197,197,197,197,197,197,197,197,197,197,197,197,197,197,197,197,198,197,198,199,200
+</data>
+ </layer>
+ <objectgroup id="3" name="objects" offsetx="0.125" offsety="0.25">
+  <object id="1" name="player" type="player" x="8.44697" y="105.443" width="15" height="22"/>
+  <object id="2" name="box" type="box" x="72.2311" y="103.754" width="16" height="16">
+   <properties>
+    <property name="content" value="rotatingCoin"/>
+   </properties>
+  </object>
+  <object id="8" name="box" type="box" x="200.182" y="64" width="16" height="16">
+   <properties>
+    <property name="content" value="rotatingCoin"/>
+   </properties>
+  </object>
+  <object id="25" name="collectible" type="collectible" x="456" y="136" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="31" name="goomba" type="goomba" x="581.125" y="153.042" width="17" height="17"/>
+  <object id="32" name="collectible" type="collectible" x="688" y="120" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="34" name="brick" type="brick" x="200" y="128" width="16" height="16"/>
+  <object id="37" name="platformMovingUpAndDown" type="platformMovingUpAndDown" x="264" y="128" width="42" height="7"/>
+  <object id="44" name="new_level2" type="portal" x="724.875" y="124.833" width="23.125" height="21.125">
+   <properties>
+    <property name="direction" value="down"/>
+    <property name="marioSpawnX" type="int" value="15"/>
+    <property name="marioSpawnY" type="int" value="147"/>
+   </properties>
+  </object>
+  <object id="45" name="exit" type="portal" x="775.042" y="126.292" width="20.75" height="20">
+   <properties>
+    <property name="direction" value="none"/>
+    <property name="marioSpawnX" type="int" value="0"/>
+    <property name="marioSpawnY" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="46" name="goomba" type="goomba" x="341.966" y="146.568" width="17" height="17"/>
+  <object id="47" name="platformMovingLeftAndRight" type="platformMovingLeftAndRight" x="314.75" y="65" width="42" height="7"/>
+  <object id="50" name="new_level2" type="portal" x="104.375" y="147.563" width="23.125" height="21.125">
+   <properties>
+    <property name="direction" value="down"/>
+    <property name="marioSpawnX" type="int" value="16"/>
+    <property name="marioSpawnY" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="52" name="box" type="box" x="216.182" y="64" width="16" height="16">
+   <properties>
+    <property name="content" value="rotatingCoin"/>
+   </properties>
+  </object>
+  <object id="53" name="box" type="box" x="232.182" y="64" width="16" height="16">
+   <properties>
+    <property name="content" value="rotatingCoin"/>
+   </properties>
+  </object>
+  <object id="54" name="box" type="box" x="392" y="80" width="16" height="16">
+   <properties>
+    <property name="content" value="rotatingCoin"/>
+   </properties>
+  </object>
+  <object id="55" name="box" type="box" x="408.156" y="80" width="16" height="16">
+   <properties>
+    <property name="content" value="rotatingCoin"/>
+   </properties>
+  </object>
+  <object id="56" name="box" type="box" x="424.375" y="80" width="16" height="16">
+   <properties>
+    <property name="content" value="rotatingCoin"/>
+   </properties>
+  </object>
+  <object id="57" name="brick" type="brick" x="216.273" y="128.119" width="16" height="16"/>
+  <object id="58" name="brick" type="brick" x="232.273" y="128.119" width="16" height="16"/>
+  <object id="59" name="collectible" type="collectible" x="656" y="136" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="60" name="collectible" type="collectible" x="672" y="128" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="61" name="collectible" type="collectible" x="704" y="112" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="62" name="collectible" type="collectible" x="440" y="128" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="64" name="collectible" type="collectible" x="408.205" y="119.648" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="65" name="collectible" type="collectible" x="376" y="128" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="66" name="collectible" type="collectible" x="360" y="136" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="67" name="collectible" type="collectible" x="472" y="144" width="16" height="16">
+   <properties>
+    <property name="kindOfCollectible" value="coin2"/>
+   </properties>
+  </object>
+  <object id="68" name="box" type="box" x="608.542" y="88.5" width="16" height="16">
+   <properties>
+    <property name="content" value="rotatingCoin"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
