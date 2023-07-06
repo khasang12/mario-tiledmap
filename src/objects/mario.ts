@@ -273,6 +273,22 @@ export class Mario extends Phaser.GameObjects.Sprite {
         }
     }
 
+    public revive(): void {
+        if (this.isVulnerable) this.currentScene.registry.values.lives -= 1
+        this.currentScene.events.emit('livesChanged')
+        this.isVulnerable = false
+        this.currentScene.tweens.add({
+            targets: this, // the game object to apply the tween to
+            alpha: 0, // target alpha value
+            duration: 200, // duration of the tween in milliseconds
+            yoyo: true, // reverse the tween to return to the original value
+            repeat: 4, // repeat the tween indefinitely
+        })
+        this.currentScene.time.delayedCall(1000, () => {
+            this.isVulnerable = true
+        })
+    }
+
     public dance() {
         this.isDancing = true
         this.currentScene.tweens.add({

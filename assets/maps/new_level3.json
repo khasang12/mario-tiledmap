@@ -1117,6 +1117,24 @@
                          "type":"bool",
                          "value":true
                         }]
+                }, 
+                {
+                 "id":2123,
+                 "properties":[
+                        {
+                         "name":"collide",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":2124,
+                 "properties":[
+                        {
+                         "name":"collide",
+                         "type":"bool",
+                         "value":true
+                        }]
                 }],
          "tilewidth":8
         }],

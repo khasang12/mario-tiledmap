@@ -308,7 +308,10 @@ export class GameScene extends Phaser.Scene {
         } else {
             // player got hit from the side or on the head
             if (_player.getVulnerable()) {
-                _player.gotHit()
+                if (this.registry.get('lives') == 0) _player.gotHit()
+                else {
+                    _player.revive()
+                }
             }
         }
     }
@@ -445,7 +448,7 @@ export class GameScene extends Phaser.Scene {
     // TODO!!!
     private handlePlayerOnPlatform(player: Mario, platform: Platform): void {
         if (platform.body.moves && platform.body.touching.up && player.body.touching.down) {
-            return
+            if (platform.isMovingLRType()) player.setX(platform.x + platform.width / 2)
         }
     }
 }

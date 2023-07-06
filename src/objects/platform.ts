@@ -13,7 +13,6 @@ export class Platform extends Phaser.GameObjects.Image {
         // variables
         this.currentScene = aParams.scene
         this.tweenProps = aParams.tweenProps
-
         this.initImage()
         this.initTween()
         this.currentScene.add.existing(this)
@@ -43,5 +42,9 @@ export class Platform extends Phaser.GameObjects.Image {
 
     update(): void {
         return
+    }
+
+    isMovingLRType(): boolean {
+        return Object.hasOwn(this.tweenProps, 'x')
     }
 }

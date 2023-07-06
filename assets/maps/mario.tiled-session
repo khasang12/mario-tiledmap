@@ -71,8 +71,8 @@
             "scale": 5.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 66.9090909090909,
-                "y": 139.54545454545456
+                "x": 66.72727272727273,
+                "y": 139.36363636363637
             }
         },
         "new_level1.json#new_tiles": {
@@ -96,8 +96,8 @@
             "scale": 4,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 78.75,
-                "y": 111.875
+                "x": 399.875,
+                "y": 95.875
             }
         },
         "new_level2.json#new_tiles": {
@@ -110,8 +110,8 @@
             "scale": 5.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 620.5454545454545,
-                "y": 123.9090909090909
+                "x": 399.90909090909093,
+                "y": 95.90909090909092
             }
         },
         "new_level3.json#new_tiles": {
@@ -121,8 +121,8 @@
             "scale": 8,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 45.5,
-                "y": 60.9375
+                "x": 199.9375,
+                "y": 199.9375
             }
         },
         "obstacleRules.tmx#new_tiles": {
