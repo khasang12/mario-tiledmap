@@ -5,6 +5,7 @@ import { Goomba } from '../objects/goomba'
 import { Mario } from '../objects/mario'
 import { Platform } from '../objects/platform'
 import { Portal } from '../objects/portal'
+import { Princess } from '../objects/princess'
 
 export class GameScene extends Phaser.Scene {
     // tilemap
@@ -20,6 +21,7 @@ export class GameScene extends Phaser.Scene {
     private enemies: Phaser.GameObjects.Group
     private platforms: Phaser.GameObjects.Group
     private player: Mario
+    private princess: Princess
     private portals: Phaser.GameObjects.Group
 
     constructor() {
@@ -140,6 +142,14 @@ export class GameScene extends Phaser.Scene {
             this
         )
 
+        this.physics.add.collider(
+            this.player,
+            this.princess,
+            (a, b) => this.handlePlayerRescuePrincess(a as Mario, b as Princess),
+            undefined,
+            this
+        )
+
         // *****************************************************************
         // CAMERA
         // *****************************************************************
@@ -178,6 +188,15 @@ export class GameScene extends Phaser.Scene {
                     x: this.registry.get('spawn').x,
                     y: this.registry.get('spawn').y,
                     texture: 'mario',
+                })
+            }
+
+            if (object.type === 'princess') {
+                this.princess = new Princess({
+                    scene: this,
+                    x: object.x,
+                    y: object.y,
+                    texture: 'princess',
                 })
             }
 
@@ -289,9 +308,21 @@ export class GameScene extends Phaser.Scene {
         } else {
             // player got hit from the side or on the head
             if (_player.getVulnerable()) {
-                _player.gotHit()
+                if (this.registry.get('lives') == 0) _player.gotHit()
+                else {
+                    _player.revive()
+                }
             }
         }
+    }
+
+    /**
+     * Player <-> Enemy Overlap
+     * @param _player [Mario]
+     * @param _princess  [Princess]
+     */
+    private handlePlayerRescuePrincess(_player: Mario, _princess: Princess): void {
+        if (_player.getIsDancing() == false) _player.dance()
     }
 
     /**
@@ -417,7 +448,7 @@ export class GameScene extends Phaser.Scene {
     // TODO!!!
     private handlePlayerOnPlatform(player: Mario, platform: Platform): void {
         if (platform.body.moves && platform.body.touching.up && player.body.touching.down) {
-            return
+            if (platform.isMovingLRType()) player.setX(platform.x + platform.width / 2)
         }
     }
 }

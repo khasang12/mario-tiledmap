@@ -6,6 +6,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
     // variables
     private currentScene: Phaser.Scene
     private marioSize: string
+    private isDancing: boolean
     private lastDirection: string
     private acceleration: number
     private isJumping: boolean
@@ -32,6 +33,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
         this.initSprite()
         this.lastDirection = 'right'
         this.currentScene.add.existing(this)
+        this.isDancing = false
     }
 
     private initSprite() {
@@ -125,10 +127,14 @@ export class Mario extends Phaser.GameObjects.Sprite {
         }
 
         // handle jumping
-        if (this.keys.get('JUMP')?.isDown && !this.isJumping) {
-            this.body.setVelocityY(-180)
+        if (!this.isDancing && this.keys.get('JUMP')?.isDown && !this.isJumping) {
+            this.body.setVelocityY(-200)
             this.isJumping = true
         }
+    }
+
+    public getIsDancing() {
+        return this.isDancing
     }
 
     public fireBullet() {
@@ -265,5 +271,36 @@ export class Mario extends Phaser.GameObjects.Sprite {
             this.body.checkCollision.left = false
             this.body.checkCollision.right = false
         }
+    }
+
+    public revive(): void {
+        if (this.isVulnerable) this.currentScene.registry.values.lives -= 1
+        this.currentScene.events.emit('livesChanged')
+        this.isVulnerable = false
+        this.currentScene.tweens.add({
+            targets: this, // the game object to apply the tween to
+            alpha: 0, // target alpha value
+            duration: 200, // duration of the tween in milliseconds
+            yoyo: true, // reverse the tween to return to the original value
+            repeat: 4, // repeat the tween indefinitely
+        })
+        this.currentScene.time.delayedCall(1000, () => {
+            this.isVulnerable = true
+        })
+    }
+
+    public dance() {
+        this.isDancing = true
+        this.currentScene.tweens.add({
+            targets: this,
+            duration: 1000, // duration of each tween, in milliseconds
+            ease: 'Linear', // easing function to use
+            yoyo: true, // whether to yoyo the tween (play it in reverse after it completes)
+            repeat: -1, // number of times to repeat the tween (-1 means repeat indefinitely)
+            x: 744,
+        })
+        this.currentScene.time.delayedCall(3000, () => {
+            this.currentScene.scene.start('MenuScene')
+        })
     }
 }

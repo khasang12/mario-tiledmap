@@ -1,0 +1,14 @@
+{
+    "automappingRulesFile": "../../../Mario/assets/maps/rules.txt",
+    "commands": [
+    ],
+    "compatibilityVersion": 1100,
+    "extensionsPath": "extensions",
+    "folders": [
+        ".",
+        ".",
+        "."
+    ],
+    "propertyTypes": [
+    ]
+}
