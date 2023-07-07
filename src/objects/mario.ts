@@ -4,6 +4,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
     body: Phaser.Physics.Arcade.Body
 
     // variables
+    private equip: Phaser.Types.Physics.Arcade.SpriteWithDynamicBody
     private currentScene: Phaser.Scene
     private marioSize: string
     private isDancing: boolean
@@ -11,6 +12,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
     private acceleration: number
     private isJumping: boolean
     private isDying: boolean
+    private isFighting: boolean
     private isVulnerable: boolean
     private vulnerableCounter: number
     private bullet: Phaser.Types.Physics.Arcade.SpriteWithDynamicBody
@@ -52,6 +54,8 @@ export class Mario extends Phaser.GameObjects.Sprite {
         this.bullet.body.allowGravity = false
         this.bullet.setAlpha(0)
         this.bullet.setDepth(1)
+        this.equip = this.scene.physics.add.sprite(this.x, this.y, 'equip')
+        this.equip.body.allowGravity = false
 
         // input
         this.keys = new Map([
@@ -60,6 +64,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
             ['DOWN', this.addKey('DOWN')],
             ['JUMP', this.addKey('SPACE')],
             ['SHOOT', this.addKey('Q')],
+            ['BONK', this.addKey('F')],
         ])
 
         // physics
@@ -75,6 +80,12 @@ export class Mario extends Phaser.GameObjects.Sprite {
     }
 
     update(): void {
+        Phaser.Display.Bounds.SetCenterX(this.equip, this.body.center.x)
+        Phaser.Display.Bounds.SetCenterY(this.equip, this.body.center.y + 2)
+        if (this.lastDirection == 'right')
+            Phaser.Display.Bounds.SetLeft(this.equip, this.body.right - 5)
+        else Phaser.Display.Bounds.SetRight(this.equip, this.body.left + 5)
+
         if (!this.isDying) {
             this.handleInput()
             this.handleAnimations()
@@ -116,7 +127,21 @@ export class Mario extends Phaser.GameObjects.Sprite {
             this.body.setAccelerationX(this.acceleration)
             this.setFlipX(false)
         } else if (this.keys.get('SHOOT')?.isDown) {
-            this.fireBullet()
+            if (!this.isFighting) {
+                this.fireBullet()
+            }
+        } else if (this.keys.get('BONK')?.isDown) {
+            if (!this.isFighting) {
+                this.equip.enableBody(false, this.x, this.y, true, true)
+                this.isFighting = true
+                if (this.lastDirection == 'right') this.equip.setAngle(90)
+                else this.equip.setAngle(-90)
+                this.scene.time.delayedCall(300, () => {
+                    this.equip.setAngle(0)
+                    this.isFighting = false
+                    this.equip.disableBody(true,false)
+                })
+            }
         } else if (this.keys.get('LEFT')?.isDown) {
             this.lastDirection = 'left'
             this.body.setAccelerationX(-this.acceleration)
@@ -138,30 +163,46 @@ export class Mario extends Phaser.GameObjects.Sprite {
     }
 
     public fireBullet() {
-        this.bullet.enableBody(true, this.x, this.y, true, true)
-        this.bullet.setAlpha(1)
-        this.bullet.setPosition(this.x, this.y)
-        this.bullet.setVelocityX(this.lastDirection == 'right' ? 300 : -300)
-        this.scene.anims.create({
-            key: 'bullet',
-            frames: this.scene.anims.generateFrameNumbers('bullet', {
-                start: 0,
-                end: 3,
-            }),
-            frameRate: 10,
-            repeat: -1,
-        })
-        this.bullet.anims.play('bullet')
+        if (this.currentScene.registry.values.coins >= 5) {
+            // Use coins to emit bullet
+            this.currentScene.registry.values.coins -= 5
+            this.currentScene.events.emit('coinsChanged')
 
-        // Set a timer to destroy the bullet after 2 seconds
-        this.scene.time.addEvent({
-            delay: 2000,
-            callback: this.stopBullet,
-            callbackScope: this,
-        })
+            this.bullet.enableBody(true, this.x, this.y, true, true)
+            this.bullet.setAlpha(1)
+            this.bullet.setPosition(this.x, this.y)
+            this.bullet.setVelocityX(this.lastDirection == 'right' ? 300 : -300)
+
+            let bulletTexture = 'bullet'
+            if (this.texture.key == 'knight') bulletTexture = 'bullet-knight'
+            else if (this.texture.key == 'hermit') bulletTexture = 'bullet-hermit'
+
+            this.scene.anims.create({
+                key: bulletTexture,
+                frames: this.scene.anims.generateFrameNumbers(bulletTexture, {
+                    start: 0,
+                    end: 3,
+                }),
+                frameRate: 10,
+                repeat: 5,
+            })
+            this.bullet.anims.play(bulletTexture)
+
+            // Set a timer to destroy the bullet after 2 seconds
+            this.scene.time.addEvent({
+                delay: 2000,
+                callback: this.stopBullet,
+                callbackScope: this,
+            })
+        }
     }
+
     public getBullet() {
         return this.bullet
+    }
+
+    public getEquip() {
+        return this.equip
     }
 
     public stopBullet() {
@@ -177,7 +218,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
             // mario is jumping or falling
             this.anims.stop()
             if (this.marioSize === 'small') {
-                this.setFrame(4)
+                this.setFrame(8)
             } else {
                 this.setFrame(10)
             }
@@ -196,10 +237,12 @@ export class Mario extends Phaser.GameObjects.Sprite {
                 }
             }
 
-            if (this.body.velocity.x > 0) {
+            if (this.texture.key == 'knight') {
+                this.anims.play(this.marioSize + 'KnightWalk', true)
+            } else if (this.texture.key == 'mario') {
                 this.anims.play(this.marioSize + 'MarioWalk', true)
             } else {
-                this.anims.play(this.marioSize + 'MarioWalk', true)
+                this.anims.play(this.marioSize + 'HermitWalk', true)
             }
         } else {
             // mario is standing still
@@ -208,7 +251,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
                 this.setFrame(0)
             } else {
                 if (this.keys.get('DOWN')?.isDown) {
-                    this.setFrame(13)
+                    this.setFrame(7)
                 } else {
                     this.setFrame(6)
                 }
@@ -296,9 +339,11 @@ export class Mario extends Phaser.GameObjects.Sprite {
             ease: 'Linear', // easing function to use
             yoyo: true, // whether to yoyo the tween (play it in reverse after it completes)
             repeat: -1, // number of times to repeat the tween (-1 means repeat indefinitely)
-            x: 744,
+            x: 739,
         })
         this.currentScene.time.delayedCall(3000, () => {
+            this.currentScene.scene.stop('GameScene')
+            this.currentScene.scene.stop('HUDScene')
             this.currentScene.scene.start('MenuScene')
         })
     }

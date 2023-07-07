@@ -10,9 +10,13 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
     version: '2.0',
     width: 320,
     height: 288,
-    zoom: 3,
+    zoom: 5,
     type: Phaser.AUTO,
     parent: 'game',
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
     scene: [BootScene, MenuScene, HUDScene, GameScene],
     plugins: {
         scene: [

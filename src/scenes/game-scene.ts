@@ -50,7 +50,6 @@ export class GameScene extends Phaser.Scene {
         this.foregroundLayer.setCollisionByProperty({ collide: true })
 
         // Init animations on map
-        console.log(this.animatedTiles);
         this.animatedTiles.init(this.map)
 
         // *****************************************************************
@@ -117,6 +116,18 @@ export class GameScene extends Phaser.Scene {
             this.enemies,
             (a, b) =>
                 this.handleBulletEnemyOverlap(
+                    a as Phaser.Types.Physics.Arcade.SpriteWithDynamicBody,
+                    b as Goomba
+                ),
+            undefined,
+            this.player
+        )
+
+        this.physics.add.overlap(
+            this.player.getEquip(),
+            this.enemies,
+            (a, b) =>
+                this.handleEquipEnemyOverlap(
                     a as Phaser.Types.Physics.Arcade.SpriteWithDynamicBody,
                     b as Goomba
                 ),
@@ -362,6 +373,30 @@ export class GameScene extends Phaser.Scene {
     }
 
     /**
+     * Equip <-> Enemy Overlap
+     * @param _player [Equip]
+     * @param _enemy  [Enemy]
+     */
+    private handleEquipEnemyOverlap(
+        _equip: Phaser.Types.Physics.Arcade.SpriteWithDynamicBody,
+        _enemy: Goomba
+    ): void {
+        // player hit enemy on top
+        _enemy.gotHitFromBulletOrMarioHasStar()
+
+        this.add.tween({
+            targets: _enemy,
+            props: { alpha: 0 },
+            duration: 1000,
+            ease: 'Power0',
+            yoyo: false,
+            onComplete: function () {
+                _enemy.isDead()
+            },
+        })
+    }
+
+    /**
      * Player <-> Box Collision
      * @param _player [Mario]
      * @param _box    [Box]
@@ -444,6 +479,12 @@ export class GameScene extends Phaser.Scene {
             }
             case 'mushroom': {
                 _player.growMario()
+                break
+            }
+            case 'hermit':
+            case 'knight': {
+                _player.texture.key = _collectible.texture.key
+                _player.getEquip().setTexture('equip-' + _collectible.texture.key)
                 break
             }
             case 'star': {

@@ -18,7 +18,22 @@ export class MenuScene extends Phaser.Scene {
         this.add.image(0, 0, 'title').setOrigin(0, 0)
 
         this.bitmapTexts.push(
-            this.add.bitmapText(this.sys.canvas.width / 2 - 22, 180, 'font', 'START', 8)
+            this.add.bitmapText(this.sys.canvas.width / 2 - 22, 120+60, 'font', 'Press S to START', 8)
+        )
+        this.bitmapTexts.push(
+            this.add.bitmapText(
+                this.sys.canvas.width / 2 - 22,
+                150 + 50,
+                'font',
+                'Instructions:',
+                8
+            )
+        )
+        this.bitmapTexts.push(
+            this.add.bitmapText(this.sys.canvas.width / 2, 165 + 60, 'font', '* Q to Fire! 5 coins', 8)
+        )
+        this.bitmapTexts.push(
+            this.add.bitmapText(this.sys.canvas.width / 2, 180 + 60, 'font', '* F to Bonk! 0 coins', 8)
         )
     }
 
