@@ -6,9 +6,11 @@ import { Mario } from '../objects/mario'
 import { Platform } from '../objects/platform'
 import { Portal } from '../objects/portal'
 import { Princess } from '../objects/princess'
+import { AnimatedTiles } from '../plugins/AnimatedTiles'
 
 export class GameScene extends Phaser.Scene {
     // tilemap
+    private animatedTiles!: AnimatedTiles
     private map: Phaser.Tilemaps.Tilemap
     private tileset: Phaser.Tilemaps.Tileset
     private backgroundLayer: Phaser.Tilemaps.TilemapLayer
@@ -46,6 +48,10 @@ export class GameScene extends Phaser.Scene {
 
         // set collision for tiles with the property collide set to true
         this.foregroundLayer.setCollisionByProperty({ collide: true })
+
+        // Init animations on map
+        console.log(this.animatedTiles);
+        this.animatedTiles.init(this.map)
 
         // *****************************************************************
         // GAME OBJECTS
@@ -158,7 +164,12 @@ export class GameScene extends Phaser.Scene {
     }
 
     update(): void {
+        if (!this.sys.isActive()) {
+            console.log('not active yet')
+            return
+        }
         this.player.update()
+        this.animatedTiles.updateAnimatedTiles()
     }
 
     private loadObjectsFromTilemap(): void {

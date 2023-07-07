@@ -1,3 +1,4 @@
+import { AnimatedTiles } from './plugins/AnimatedTiles'
 import { BootScene } from './scenes/boot-scene'
 import { GameScene } from './scenes/game-scene'
 import { HUDScene } from './scenes/hud-scene'
@@ -9,10 +10,20 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
     version: '2.0',
     width: 320,
     height: 288,
-    zoom: 5,
+    zoom: 3,
     type: Phaser.AUTO,
     parent: 'game',
     scene: [BootScene, MenuScene, HUDScene, GameScene],
+    plugins: {
+        scene: [
+            {
+                key: AnimatedTiles.key,
+                plugin: AnimatedTiles,
+                mapping: AnimatedTiles.mapping,
+                start: true,
+            },
+        ],
+    },
     input: {
         keyboard: true,
     },

@@ -51,6 +51,7 @@ export class BootScene extends Phaser.Scene {
         )
 
         // load our package
+        this.load.scenePlugin('AnimatedTiles', 'AnimatedTiles.js', 'animatedTiles', 'animatedTiles')
         this.load.pack('preload', './assets/pack.json', 'preload')
     }
 

@@ -197,7 +197,6 @@ export class Mario extends Phaser.GameObjects.Sprite {
             }
 
             if (this.body.velocity.x > 0) {
-                console.log(this.marioSize + 'MarioWalk')
                 this.anims.play(this.marioSize + 'MarioWalk', true)
             } else {
                 this.anims.play(this.marioSize + 'MarioWalk', true)
@@ -280,11 +279,11 @@ export class Mario extends Phaser.GameObjects.Sprite {
         this.currentScene.tweens.add({
             targets: this, // the game object to apply the tween to
             alpha: 0, // target alpha value
-            duration: 200, // duration of the tween in milliseconds
+            duration: 400, // duration of the tween in milliseconds
             yoyo: true, // reverse the tween to return to the original value
-            repeat: 4, // repeat the tween indefinitely
+            repeat: 3, // repeat the tween indefinitely
         })
-        this.currentScene.time.delayedCall(1000, () => {
+        this.currentScene.time.delayedCall(2000, () => {
             this.isVulnerable = true
         })
     }
