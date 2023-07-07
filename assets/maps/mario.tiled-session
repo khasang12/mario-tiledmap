@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "new_level1.json",
+    "activeFile": "",
     "automapping.whileDrawing": true,
     "expandedProjectPaths": [
         "."
@@ -14,7 +14,8 @@
             "scaleInEditor": 3
         },
         ":/automap-tiles.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "D:/Internship/Mario/assets/maps/new_level1.json": {
             "scale": 1,
@@ -64,19 +65,30 @@
             "scaleInDock": 5.5,
             "scaleInEditor": 1
         },
+        "boss.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 223.99999999999997,
+                "y": 231.66666666666663
+            }
+        },
+        "boss.tmx#new_tiles": {
+            "scaleInDock": 4
+        },
         "new_level1.json": {
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 5.5,
-            "selectedLayer": 2,
+            "scale": 8,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 66.72727272727273,
-                "y": 139.36363636363637
+                "x": 179.625,
+                "y": 58.0625
             }
         },
         "new_level1.json#new_tiles": {
-            "scaleInDock": 3
+            "scaleInDock": 5.5
         },
         "new_level1.tmx": {
             "scale": 8,
@@ -93,49 +105,51 @@
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 4,
+            "scale": 5.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 399.875,
-                "y": 95.875
+                "x": 53.090909090909086,
+                "y": 124.63636363636365
             }
         },
         "new_level2.json#new_tiles": {
-            "scaleInDock": 1
+            "scaleInDock": 3
         },
         "new_level3.json": {
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 5.5,
-            "selectedLayer": 1,
+            "scale": 4,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 399.90909090909093,
-                "y": 95.90909090909092
+                "x": 8.75,
+                "y": 164.875
             }
         },
         "new_level3.json#new_tiles": {
-            "scaleInDock": 4
+            "scaleInDock": 5.5,
+            "scaleInEditor": 8
         },
         "obstacleRules.tmx": {
-            "scale": 8,
+            "scale": 4,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 199.9375,
-                "y": 199.9375
+                "x": 87.25,
+                "y": 57.875
             }
         },
         "obstacleRules.tmx#new_tiles": {
-            "scaleInDock": 3
+            "scaleInDock": 5.5
         },
         "obstacleRules.tsx": {
             "scaleInDock": 1
         }
     },
+    "frame.defaultDuration": 500,
     "last.exportedFilePath": "D:/Internship/Super Mario/assets/maps",
     "last.imagePath": "D:/Internship/Super Mario/assets/tiles",
     "map.fixedSize": true,
-    "map.height": 200,
+    "map.height": 25,
     "map.lastUsedExportFilter": "All Files (*)",
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 8,
@@ -150,10 +164,12 @@
     "project": "mario.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "obstacleRules.tmx",
-        "new_level3.json",
-        "new_level2.json",
+        "boss.tmx",
+        ":/automap-tiles.tsx",
         "new_level1.json",
+        "new_level2.json",
+        "new_level3.json",
+        "obstacleRules.tmx",
         "new_level1.tmx",
         "D:/Internship/Mario/assets/maps/new_level1.json",
         "D:/Internship/Mario/assets/maps/new_level2.json",
