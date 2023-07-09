@@ -1,92 +1,137 @@
 {
-  "anims": [
-      {
-          "key": "smallMarioWalk",
-          "frames": {
-              "typeOfGeneration": "generateFrameNumbers",
-              "key": "mario",
-              "start": 0,
-              "end": 7
-          },
-          "repeat": -1,
-          "frameRate": 18
-      },
-      {
-          "key": "smallKnightWalk",
-          "frames": {
-              "typeOfGeneration": "generateFrameNumbers",
-              "key": "knight",
-              "start": 0,
-              "end": 7
-          },
-          "repeat": -1,
-          "frameRate": 18
-      },
-      {
-          "key": "smallHermitWalk",
-          "frames": {
-              "typeOfGeneration": "generateFrameNumbers",
-              "key": "hermit",
-              "start": 0,
-              "end": 7
-          },
-          "repeat": -1,
-          "frameRate": 18
-      },
-      {
-          "key": "bigMarioWalk",
-          "frames": {
-              "typeOfGeneration": "generateFrameNumbers",
-              "key": "mario",
-              "start": 6,
-              "end": 8
-          },
-          "repeat": -1,
-          "frameRate": 18
-      },
-      {
-          "key": "rotatingCoin",
-          "frames": {
-              "typeOfGeneration": "generateFrameNumbers",
-              "key": "rotatingCoin",
-              "start": 0,
-              "end": 1
-          },
-          "repeat": -1,
-          "frameRate": 18
-      },
-      {
-          "key": "goombaWalk",
-          "frames": {
-              "typeOfGeneration": "generateFrameNumbers",
-              "key": "goomba",
-              "start": 0,
-              "end": 1
-          },
-          "repeat": -1,
-          "frameRate": 9
-      },
-      {
-          "key": "coin",
-          "frames": {
-              "typeOfGeneration": "generateFrameNumbers",
-              "key": "coin2",
-              "start": 0,
-              "end": 0
-          },
-          "repeat": -1,
-          "frameRate": 18
-      },
-      {
-          "key": "flower",
-          "frames": {
-              "typeOfGeneration": "generateFrameNumbers",
-              "key": "flower",
-              "start": 0,
-              "end": 1
-          },
-          "repeat": -1,
-          "frameRate": 18
-      }
-  ]
+    "anims": [
+        {
+            "key": "smallMarioWalk",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "mario",
+                "start": 0,
+                "end": 7
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "smallMarioSprint",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "mario",
+                "start": 4,
+                "end": 8
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "smallKnightWalk",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "knight",
+                "start": 0,
+                "end": 7
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "smallKnightSprint",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "knight",
+                "start": 4,
+                "end": 8
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "smallHermitWalk",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "hermit",
+                "start": 0,
+                "end": 7
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "smallHermitSprint",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "hermit",
+                "start": 4,
+                "end": 8
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+
+        {
+            "key": "princessSprint",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "princess",
+                "start": 4,
+                "end": 8
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "bigMarioWalk",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "mario",
+                "start": 6,
+                "end": 8
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "rotatingCoin",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "rotatingCoin",
+                "start": 0,
+                "end": 1
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "goombaWalk",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "goomba",
+                "start": 0,
+                "end": 1
+            },
+            "repeat": -1,
+            "frameRate": 9
+        },
+        {
+            "key": "coin",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "coin2",
+                "start": 0,
+                "end": 0
+            },
+            "repeat": -1,
+            "frameRate": 18
+        },
+        {
+            "key": "flower",
+            "frames": {
+                "typeOfGeneration": "generateFrameNumbers",
+                "key": "flower",
+                "start": 0,
+                "end": 1
+            },
+            "repeat": -1,
+            "frameRate": 18
+        }
+    ]
 }
