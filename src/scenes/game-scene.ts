@@ -54,7 +54,7 @@ export class GameScene extends Phaser.Scene {
 
         // *****************************************************************
         // GAME OBJECTS
-        // *****************************************************************
+        // *****************************************************************        
         this.portals = this.add.group({
             /*classType: Portal,*/
             runChildUpdate: true,
@@ -126,11 +126,13 @@ export class GameScene extends Phaser.Scene {
         this.physics.add.overlap(
             this.player.getEquip(),
             this.enemies,
-            (a, b) =>
-                this.handleEquipEnemyOverlap(
-                    a as Phaser.Types.Physics.Arcade.SpriteWithDynamicBody,
-                    b as Goomba
-                ),
+            (a, b) => {
+                if (this.player.getIsFighting())
+                    this.handleEquipEnemyOverlap(
+                        a as Phaser.Types.Physics.Arcade.SpriteWithDynamicBody,
+                        b as Goomba
+                    )
+            },
             undefined,
             this.player
         )
@@ -167,6 +169,7 @@ export class GameScene extends Phaser.Scene {
             this
         )
 
+        this.player.reset()
         // *****************************************************************
         // CAMERA
         // *****************************************************************
@@ -180,6 +183,12 @@ export class GameScene extends Phaser.Scene {
             return
         }
         this.player.update()
+
+        if (this.player.getIsDancing()) {
+            Phaser.Display.Bounds.SetCenterX(this.princess, this.player.body.center.x + 15)
+            Phaser.Display.Bounds.SetCenterY(this.princess, this.player.body.center.y)
+        }
+
         this.animatedTiles.updateAnimatedTiles()
     }
 
@@ -344,7 +353,10 @@ export class GameScene extends Phaser.Scene {
      * @param _princess  [Princess]
      */
     private handlePlayerRescuePrincess(_player: Mario, _princess: Princess): void {
-        if (_player.getIsDancing() == false) _player.dance()
+        if (_player.getIsDancing() == false) {
+            _player.dance()
+            _princess.dance()
+        }
     }
 
     /**
@@ -381,7 +393,6 @@ export class GameScene extends Phaser.Scene {
         _equip: Phaser.Types.Physics.Arcade.SpriteWithDynamicBody,
         _enemy: Goomba
     ): void {
-        // player hit enemy on top
         _enemy.gotHitFromBulletOrMarioHasStar()
 
         this.add.tween({
@@ -474,6 +485,10 @@ export class GameScene extends Phaser.Scene {
 
     private handlePlayerCollectiblesOverlap(_player: Mario, _collectible: Collectible): void {
         switch (_collectible.texture.key) {
+            case 'coin2': {
+                _collectible.addCoinAndScore(1, 50)
+                break
+            }
             case 'flower': {
                 break
             }

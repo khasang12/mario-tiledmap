@@ -33,4 +33,11 @@ export class Collectible extends Phaser.GameObjects.Sprite {
         this.currentScene.registry.values.score += this.points
         this.currentScene.events.emit('scoreChanged')
     }
+
+    public addCoinAndScore(coin: number, score: number): void {
+        this.currentScene.registry.values.coins += coin
+        this.currentScene.events.emit('coinsChanged')
+        this.currentScene.registry.values.score += score
+        this.currentScene.events.emit('scoreChanged')
+    }
 }

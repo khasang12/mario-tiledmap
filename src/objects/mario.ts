@@ -139,7 +139,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
                 this.scene.time.delayedCall(300, () => {
                     this.equip.setAngle(0)
                     this.isFighting = false
-                    this.equip.disableBody(true,false)
+                    this.equip.disableBody(true, false)
                 })
             }
         } else if (this.keys.get('LEFT')?.isDown) {
@@ -160,6 +160,15 @@ export class Mario extends Phaser.GameObjects.Sprite {
 
     public getIsDancing() {
         return this.isDancing
+    }
+
+    public getIsFighting() {
+        return this.isFighting
+    }
+
+    public reset() {
+        this.texture.key = 'mario'
+        this.equip.setTexture('equip')
     }
 
     public fireBullet() {
@@ -333,15 +342,24 @@ export class Mario extends Phaser.GameObjects.Sprite {
 
     public dance() {
         this.isDancing = true
+        if (this.texture.key == 'knight') {
+            this.anims.play(this.marioSize + 'KnightSprint', true)
+        } else if (this.texture.key == 'mario') {
+            this.anims.play(this.marioSize + 'MarioSprint', true)
+        } else {
+            this.anims.play(this.marioSize + 'HermitSprint', true)
+        }
+        
         this.currentScene.tweens.add({
             targets: this,
             duration: 1000, // duration of each tween, in milliseconds
             ease: 'Linear', // easing function to use
-            yoyo: true, // whether to yoyo the tween (play it in reverse after it completes)
-            repeat: -1, // number of times to repeat the tween (-1 means repeat indefinitely)
-            x: 739,
+            x: 763,
         })
-        this.currentScene.time.delayedCall(3000, () => {
+
+        
+
+        this.currentScene.time.delayedCall(1500, () => {
             this.currentScene.scene.stop('GameScene')
             this.currentScene.scene.stop('HUDScene')
             this.currentScene.scene.start('MenuScene')

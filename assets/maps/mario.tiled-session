@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "new_level2.json",
     "automapping.whileDrawing": true,
     "expandedProjectPaths": [
         "."
@@ -11,7 +11,7 @@
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "": {
-            "scaleInEditor": 3
+            "scaleInEditor": 8
         },
         ":/automap-tiles.tsx": {
             "scaleInDock": 1,
@@ -80,15 +80,16 @@
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 8,
+            "scale": 4,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 179.625,
-                "y": 58.0625
+                "x": 113.5,
+                "y": 97.625
             }
         },
         "new_level1.json#new_tiles": {
-            "scaleInDock": 5.5
+            "scaleInDock": 5.5,
+            "scaleInEditor": 5.5
         },
         "new_level1.tmx": {
             "scale": 8,
@@ -105,41 +106,43 @@
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 5.5,
-            "selectedLayer": 2,
+            "scale": 2,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 53.090909090909086,
-                "y": 124.63636363636365
+                "x": 84,
+                "y": 124.25
             }
         },
         "new_level2.json#new_tiles": {
-            "scaleInDock": 3
+            "scaleInDock": 4,
+            "scaleInEditor": 5.5
         },
         "new_level3.json": {
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 4,
-            "selectedLayer": 2,
+            "scale": 1.5,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 8.75,
-                "y": 164.875
+                "x": 223.33333333333337,
+                "y": 154.99999999999997
             }
         },
         "new_level3.json#new_tiles": {
             "scaleInDock": 5.5,
-            "scaleInEditor": 8
+            "scaleInEditor": 5.5
         },
         "obstacleRules.tmx": {
             "scale": 4,
-            "selectedLayer": 2,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 87.25,
-                "y": 57.875
+                "x": 61,
+                "y": 134.875
             }
         },
         "obstacleRules.tmx#new_tiles": {
-            "scaleInDock": 5.5
+            "scaleInDock": 3,
+            "scaleInEditor": 5.5
         },
         "obstacleRules.tsx": {
             "scaleInDock": 1
@@ -164,12 +167,12 @@
     "project": "mario.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "boss.tmx",
         ":/automap-tiles.tsx",
         "new_level1.json",
-        "new_level2.json",
-        "new_level3.json",
         "obstacleRules.tmx",
+        "new_level3.json",
+        "new_level2.json",
+        "boss.tmx",
         "new_level1.tmx",
         "D:/Internship/Mario/assets/maps/new_level1.json",
         "D:/Internship/Mario/assets/maps/new_level2.json",

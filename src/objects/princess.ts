@@ -5,6 +5,7 @@ export class Princess extends Phaser.GameObjects.Sprite {
 
     private currentScene: Phaser.Scene
     private anim: Phaser.Animations.Animation | false
+    private movingTweens: Phaser.Tweens.Tween
 
     constructor(aParams: ISpriteConstructor) {
         super(aParams.scene, aParams.x, aParams.y, aParams.texture, aParams.frame)
@@ -32,13 +33,17 @@ export class Princess extends Phaser.GameObjects.Sprite {
         //this.adjustPhysicBodyToSmallSize();
         this.body.setSize(15, 21)
 
-        this.currentScene.tweens.add({
+        this.movingTweens = this.currentScene.tweens.add({
             targets: this,
             duration: 1000, // duration of each tween, in milliseconds
             ease: 'Linear', // easing function to use
             yoyo: true, // whether to yoyo the tween (play it in reverse after it completes)
             repeat: -1, // number of times to repeat the tween (-1 means repeat indefinitely)
-            x: 720,
+            x: 710,
         })
+    }
+
+    public dance(){
+        this.anims.play('princessSprint')
     }
 }
