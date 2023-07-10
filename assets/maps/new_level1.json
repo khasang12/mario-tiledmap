@@ -93,13 +93,6 @@
                  "y":105.443181818182
                 }, 
                 {
-                 "id":2,
-                 "template":"templates\/box.tx",
-                 "type":"box",
-                 "x":72.2310606060606,
-                 "y":103.753787878788
-                }, 
-                {
                  "height":16,
                  "id":8,
                  "name":"box",
@@ -162,13 +155,6 @@
                  "y":120
                 }, 
                 {
-                 "id":34,
-                 "template":"templates\/brick.tx",
-                 "type":"brick",
-                 "x":200,
-                 "y":120
-                }, 
-                {
                  "id":37,
                  "template":"templates\/platformMovingUpAndDown.tx",
                  "type":"platformMovingUpAndDown",
@@ -201,13 +187,6 @@
                  "width":23.125,
                  "x":724.875,
                  "y":124.833333333333
-                }, 
-                {
-                 "id":45,
-                 "template":"templates\/exit.tx",
-                 "type":"portal",
-                 "x":775.041666666667,
-                 "y":126.291666666667
                 }, 
                 {
                  "id":46,
@@ -343,8 +322,8 @@
                  "type":"brick",
                  "visible":true,
                  "width":16,
-                 "x":216.272727272728,
-                 "y":120.119318181818
+                 "x":200,
+                 "y":120
                 }, 
                 {
                  "height":16,
@@ -426,13 +405,6 @@
                  "y":128
                 }, 
                 {
-                 "id":64,
-                 "template":"templates\/collectible.tx",
-                 "type":"collectible",
-                 "x":408.204545454545,
-                 "y":119.647727272727
-                }, 
-                {
                  "height":16,
                  "id":65,
                  "name":"collectible",
@@ -446,8 +418,8 @@
                  "type":"collectible",
                  "visible":true,
                  "width":16,
-                 "x":376,
-                 "y":128
+                 "x":408,
+                 "y":120
                 }, 
                 {
                  "height":16,
@@ -499,6 +471,78 @@
                  "width":16,
                  "x":608.541666666667,
                  "y":88.5
+                }, 
+                {
+                 "height":16,
+                 "id":73,
+                 "name":"box",
+                 "properties":[
+                        {
+                         "name":"content",
+                         "type":"string",
+                         "value":"rotatingCoin"
+                        }],
+                 "rotation":0,
+                 "type":"box",
+                 "visible":true,
+                 "width":16,
+                 "x":73.875,
+                 "y":121.25
+                }, 
+                {
+                 "height":16,
+                 "id":74,
+                 "name":"brick",
+                 "rotation":0,
+                 "type":"brick",
+                 "visible":true,
+                 "width":16,
+                 "x":216.875,
+                 "y":119.75
+                }, 
+                {
+                 "height":20,
+                 "id":75,
+                 "name":"exit",
+                 "properties":[
+                        {
+                         "name":"direction",
+                         "type":"string",
+                         "value":"none"
+                        }, 
+                        {
+                         "name":"marioSpawnX",
+                         "type":"int",
+                         "value":0
+                        }, 
+                        {
+                         "name":"marioSpawnY",
+                         "type":"int",
+                         "value":0
+                        }],
+                 "rotation":0,
+                 "type":"portal",
+                 "visible":true,
+                 "width":20.75,
+                 "x":775.5,
+                 "y":123.5
+                }, 
+                {
+                 "height":16,
+                 "id":76,
+                 "name":"collectible",
+                 "properties":[
+                        {
+                         "name":"kindOfCollectible",
+                         "type":"string",
+                         "value":"coin2"
+                        }],
+                 "rotation":0,
+                 "type":"collectible",
+                 "visible":true,
+                 "width":16,
+                 "x":375.875,
+                 "y":125
                 }],
          "offsetx":0.125,
          "offsety":0.25,
@@ -509,7 +553,7 @@
          "y":0
         }],
  "nextlayerid":4,
- "nextobjectid":73,
+ "nextobjectid":77,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.1",

@@ -81,10 +81,10 @@
                 3
             ],
             "scale": 4,
-            "selectedLayer": 1,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 83.125,
-                "y": 112.75
+                "x": 760.5,
+                "y": 107.625
             }
         },
         "new_level1.json#new_tiles": {
@@ -106,11 +106,11 @@
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 1.5,
-            "selectedLayer": 1,
+            "scale": 4,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 769,
-                "y": 23.33333333333337
+                "x": 763.25,
+                "y": 134.375
             }
         },
         "new_level2.json#new_tiles": {
@@ -122,10 +122,10 @@
                 3
             ],
             "scale": 3,
-            "selectedLayer": 1,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 750.8333333333333,
-                "y": 112.33333333333334
+                "x": 399.99999999999994,
+                "y": 96.16666666666666
             }
         },
         "new_level3.json#new_tiles": {
@@ -136,8 +136,8 @@
             "scale": 8,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 54.3125,
-                "y": 143.375
+                "x": 54.25,
+                "y": 143.1875
             }
         },
         "obstacleRules.tmx#new_tiles": {
@@ -149,7 +149,7 @@
         }
     },
     "frame.defaultDuration": 500,
-    "last.executablePath": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "last.executablePath": "C:/Windows/System32/cmd.exe",
     "last.exportedFilePath": "D:/Internship/Super Mario/assets/maps",
     "last.imagePath": "D:/Internship/Super Mario/assets/tiles",
     "last.objectTemplatePath": "D:/Internship/Super Mario/assets/maps/templates",
