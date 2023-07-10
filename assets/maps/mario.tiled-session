@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "new_level2.json",
+    "activeFile": "",
     "automapping.whileDrawing": true,
     "expandedProjectPaths": [
         "."
@@ -83,8 +83,8 @@
             "scale": 4,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 113.5,
-                "y": 97.625
+                "x": 83.125,
+                "y": 112.75
             }
         },
         "new_level1.json#new_tiles": {
@@ -106,11 +106,11 @@
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 2,
+            "scale": 1.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 84,
-                "y": 124.25
+                "x": 769,
+                "y": 23.33333333333337
             }
         },
         "new_level2.json#new_tiles": {
@@ -121,11 +121,11 @@
             "expandedObjectLayers": [
                 3
             ],
-            "scale": 1.5,
-            "selectedLayer": 0,
+            "scale": 3,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 223.33333333333337,
-                "y": 154.99999999999997
+                "x": 750.8333333333333,
+                "y": 112.33333333333334
             }
         },
         "new_level3.json#new_tiles": {
@@ -133,11 +133,11 @@
             "scaleInEditor": 5.5
         },
         "obstacleRules.tmx": {
-            "scale": 4,
+            "scale": 8,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 61,
-                "y": 134.875
+                "x": 54.3125,
+                "y": 143.375
             }
         },
         "obstacleRules.tmx#new_tiles": {
@@ -149,8 +149,11 @@
         }
     },
     "frame.defaultDuration": 500,
+    "last.executablePath": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
     "last.exportedFilePath": "D:/Internship/Super Mario/assets/maps",
     "last.imagePath": "D:/Internship/Super Mario/assets/tiles",
+    "last.objectTemplatePath": "D:/Internship/Super Mario/assets/maps/templates",
+    "last.workingDirectory": "D:/Internship/Super Mario/src",
     "map.fixedSize": true,
     "map.height": 25,
     "map.lastUsedExportFilter": "All Files (*)",
@@ -167,11 +170,11 @@
     "project": "mario.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        ":/automap-tiles.tsx",
         "new_level1.json",
-        "obstacleRules.tmx",
-        "new_level3.json",
         "new_level2.json",
+        "new_level3.json",
+        "obstacleRules.tmx",
+        ":/automap-tiles.tsx",
         "boss.tmx",
         "new_level1.tmx",
         "D:/Internship/Mario/assets/maps/new_level1.json",
