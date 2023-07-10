@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object name="platformMovingUpAndDown" type="platformMovingUpAndDown" width="42" height="7"/>
+</template>

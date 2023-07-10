@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <object name="exit" type="portal" width="20.75" height="20">
+  <properties>
+   <property name="direction" value="none"/>
+   <property name="marioSpawnX" type="int" value="0"/>
+   <property name="marioSpawnY" type="int" value="0"/>
+  </properties>
+ </object>
+</template>

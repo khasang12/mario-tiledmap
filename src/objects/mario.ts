@@ -335,7 +335,7 @@ export class Mario extends Phaser.GameObjects.Sprite {
             yoyo: true, // reverse the tween to return to the original value
             repeat: 3, // repeat the tween indefinitely
         })
-        this.currentScene.time.delayedCall(2000, () => {
+        this.currentScene.time.delayedCall(1500, () => {
             this.isVulnerable = true
         })
     }

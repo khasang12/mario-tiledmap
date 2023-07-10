@@ -54,7 +54,7 @@ export class GameScene extends Phaser.Scene {
 
         // *****************************************************************
         // GAME OBJECTS
-        // *****************************************************************        
+        // *****************************************************************
         this.portals = this.add.group({
             /*classType: Portal,*/
             runChildUpdate: true,
@@ -255,6 +255,7 @@ export class GameScene extends Phaser.Scene {
             }
 
             if (object.type === 'box') {
+                console.log(object)
                 this.boxes.add(
                     new Box({
                         scene: this,

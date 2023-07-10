@@ -1,6 +1,46 @@
 {
     "automappingRulesFile": "../../../Mario/assets/maps/rules.txt",
     "commands": [
+        {
+            "arguments": "",
+            "command": "C:/Users/dell/AppData/Local/Programs/Microsoft VS Code/Code.exe",
+            "enabled": true,
+            "name": "Open Code Project",
+            "saveBeforeExecute": true,
+            "shortcut": null,
+            "showOutput": true,
+            "workingDirectory": "D:\\Internship\\Super Mario"
+        },
+        {
+            "arguments": "yarn build",
+            "command": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+            "enabled": true,
+            "name": "Build",
+            "saveBeforeExecute": true,
+            "shortcut": null,
+            "showOutput": true,
+            "workingDirectory": "D:/Internship/Super Mario/src"
+        },
+        {
+            "arguments": "yarn deploy",
+            "command": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+            "enabled": true,
+            "name": "Deploy",
+            "saveBeforeExecute": true,
+            "shortcut": null,
+            "showOutput": true,
+            "workingDirectory": "D:/Internship/Super Mario/src"
+        },
+        {
+            "arguments": "yarn dev",
+            "command": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+            "enabled": true,
+            "name": "Demo",
+            "saveBeforeExecute": true,
+            "shortcut": null,
+            "showOutput": true,
+            "workingDirectory": "D:/Internship/Super Mario/src"
+        }
     ],
     "compatibilityVersion": 1100,
     "extensionsPath": "extensions",

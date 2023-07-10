@@ -9,7 +9,7 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
     url: 'https://github.com/digitsensitive/phaser3-typescript',
     version: '2.0',
     width: 320,
-    height: 288,
+    height: 254,
     zoom: 5,
     type: Phaser.AUTO,
     parent: 'game',
